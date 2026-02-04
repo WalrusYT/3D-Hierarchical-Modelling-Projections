@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project 2 - Tank</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="module" src="./app.js"></script>
+    </head>
+    <body>
+        <canvas id="gl-canvas" width="128" height="128">
+            Oops! Something went wrong!
+        </canvas>
+        <div id="helpPanel">
+  <h3>Keys</h3>
+  <pre>
+    'h' – Toggle this panel
+    '0' : Toggle 1/4 views
+    '1' : Front view
+    '2' : Left view
+    '3' : Top view
+    '4' : 4th view
+    '8' : Toggle 4th view (Oblique vs Axonometric)
+    '9' : Parallel vs Perspective
+    ' ' : Toggle wireframe/solid
+    'q' : Move forward
+    'e' : Move backward
+    'w' : Raise cannon
+    's' : Lower cannon
+    'a' : Rotate cabin ccw
+    'd' : Rotate cabin cw
+    'r' : Reset view params
+    '←' : Increase theta
+    '→' : Decrease theta
+    '↑' : Increase gamma
+    '↓' : Decrease gamma
+    'z' : Fire tomato
+    'x' : Reset score
+    'b' : Reset best score
+    </pre>
+    </div>
+    <div id="scoreHUD">
+    <div class="score-line">Score: <span id="scoreValue">0</span></div>
+    <div class="score-line">Best: <span id="bestValue">0</span></div>
+    <div class="score-line">Streak: <span id="streakValue">0</span></div>
+    </div>
+
+    </body>
+</html>

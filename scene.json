@@ -1,0 +1,115 @@
+{
+  "name": "tank",
+  "translation": [0, 0, 0],
+  "rotation": [0, 0, 0],
+  "scale": [1, 1, 1],
+  "primitive": null,
+  "children": [
+    {
+      "name": "base",
+      "translation": [0, 0.4, 0],
+      "rotation": [0, 0, 0],
+      "scale": [3.5, 0.5, 2],
+      "primitive": "cube",
+      "color": [0.6, 0.45, 0.2, 1.0],
+      "parent": "tank",
+      "children": [
+        {
+            "name": "wheelsRootLeft",
+            "inheritScale": false,
+            "translation": [-1.35, -0.15, 1],
+            "rotation": [90, 0, 0],
+            "scale": [0.5, 0.2, 0.5],
+            "primitive": null,
+            "color": [0.1, 0.1, 0.1, 1.0],
+            "parent": "base",
+            "children": [
+                { "name": "wheel1",  "inheritScale": true, "translation": [0, 0.0, 0], "rotation": [0, 0, 0], "scale": [1.0, 1.0, 1.0], "primitive": "cylinder", "children": [] },
+                { "name": "wheel2",  "inheritScale": true, "translation": [1.1, 0.0, 0], "rotation": [0, 0, 0], "scale": [1.0, 1.0, 1.0], "primitive": "cylinder", "children": [] },
+                { "name": "wheel3",  "inheritScale": true, "translation": [2.2, 0.0, 0], "rotation": [0, 0, 0], "scale": [1.0, 1.0, 1.0], "primitive": "cylinder", "children": [] },
+                { "name": "wheel4",  "inheritScale": true, "translation": [3.3, 0.0, 0], "rotation": [0, 0, 0], "scale": [1.0, 1.0, 1.0], "primitive": "cylinder", "children": [] },
+                { "name": "wheel5",  "inheritScale": true, "translation": [4.4, 0.0, 0], "rotation": [0, 0, 0], "scale": [1.0, 1.0, 1.0], "primitive": "cylinder", "children": [] },
+                { "name": "wheel6",  "inheritScale": true, "translation": [5.5, 0.0, 0], "rotation": [0, 0, 0], "scale": [1.0, 1.0, 1.0], "primitive": "cylinder", "children": [] }
+            ]
+        },
+        {
+            "name": "wheelsRootRight",
+            "inheritScale": false,
+            "translation": [-1.35, -0.15, -1],
+            "rotation": [90, 0, 0],
+            "scale": [0.5, 0.2, 0.5],
+            "primitive": null,
+            "color": [0.1, 0.1, 0.1, 1.0],
+            "parent": "base",
+            "children": [
+                { "name": "wheel7",  "inheritScale": true, "translation": [0, 0.0, 0], "rotation": [0, 0, 0], "scale": [1.0, 1.0, 1.0], "primitive": "cylinder", "children": [] },
+                { "name": "wheel8",  "inheritScale": true, "translation": [1.1, 0.0, 0], "rotation": [0, 0, 0], "scale": [1.0, 1.0, 1.0], "primitive": "cylinder", "children": [] },
+                { "name": "wheel9",  "inheritScale": true, "translation": [2.2, 0.0, 0], "rotation": [0, 0, 0], "scale": [1.0, 1.0, 1.0], "primitive": "cylinder", "children": [] },
+                { "name": "wheel10",  "inheritScale": true, "translation": [3.3, 0.0, 0], "rotation": [0, 0, 0], "scale": [1.0, 1.0, 1.0], "primitive": "cylinder", "children": [] },
+                { "name": "wheel11",  "inheritScale": true, "translation": [4.4, 0.0, 0], "rotation": [0, 0, 0], "scale": [1.0, 1.0, 1.0], "primitive": "cylinder", "children": [] },
+                { "name": "wheel12",  "inheritScale": true, "translation": [5.5, 0.0, 0], "rotation": [0, 0, 0], "scale": [1.0, 1.0, 1.0], "primitive": "cylinder", "children": [] }
+            ]
+        }
+      ,
+        {
+          "name": "upper_base",
+          "inheritScale": false,
+          "translation": [0, 0.35, 0],
+          "rotation": [0, 0, 0],
+          "scale": [3.5, 0.2, 2.5],
+          "primitive": "cube",
+          "color": [0.6, 0.45, 0.2, 1.0],
+          "parent": "base",
+          "children": [
+            {
+              "name": "cabin",
+              "inheritScale": false,
+              "translation": [0, 0.30, 0],
+              "rotation": [0, 0, 0],
+              "scale": [2.0, 0.5, 1.0],
+              "primitive": "cube",
+              "color": [0.6, 0.45, 0.2, 1.0],
+              "parent": "upper_base",
+              "children": [
+                {
+                  "name": "cannon_base",
+                  "inheritScale": false,
+                  "translation": [1, 0, 0],
+                  "rotation": [90, 0, 0],
+                  "scale": [0.3, 0.2, 0.3],
+                  "primitive": "cylinder",
+                  "color": [0.3, 0.3, 0.3, 1.0],
+                  "parent": "cabin",
+                  "children": [
+                    {
+                      "name": "cannon",
+                      "inheritScale": false,
+                      "translation": [0.5, 0, 0],
+                      "rotation": [0, 0, 90],
+                      "scale": [0.06, 1.2, 0.06],
+                      "primitive": "cylinder",
+                      "color": [0.3, 0.3, 0.3, 1.0],
+                      "parent": "cannon_base",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "cabin_top",
+                  "inheritScale": false,
+                  "translation": [0, 0.2, 0],
+                  "rotation": [0, 0, 0],
+                  "scale": [0.5, 0.25, 0.5],
+                  "primitive": "sphere",
+                  "color": [0.35, 0.55, 0.35, 1.0],
+                  "parent": "cabin",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ] 
+    }
+  ]
+}
